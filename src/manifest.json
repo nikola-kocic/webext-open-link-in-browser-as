@@ -1,0 +1,23 @@
+{
+
+  "description": "Provides a context menu for forcing links to open in browser",
+  "homepage_url": "https://github.com/nikola-kocic/webext-open-link-in-browser-as",
+  "manifest_version": 2,
+  "name": "Open Link in Browser As...",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "id": "{314a3bfe-730b-492c-b0b6-28de2b40a7a5}",
+      "strict_min_version": "53.0"
+    }
+  },
+
+  "permissions": [
+    "webRequest", "webRequestBlocking", "contextMenus", "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
